@@ -112,9 +112,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
+      {/* <head>
         <script src="https://unpkg.com/react-scan/dist/auto.global.js" />
-      </head>
+      </head> */}
       <body
         className={`${orbitron.variable} ${exo2.variable} ${rajdhani.variable} ${audiowide.variable} antialiased bg-white dark:bg-black overflow-x-hidden`}
       >
