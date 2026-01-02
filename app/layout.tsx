@@ -9,6 +9,7 @@ import { SendChoiceCredenza } from "@/components/send-choice-credenza";
 import { FloatingContactMenu } from "@/components/floating-contact-menu";
 import { Toaster } from "@/components/ui/sonner"
 import SpaPrefetcher from "@/components/spa-prefetcher";
+import { Analytics } from "@vercel/analytics/next"
 // Robotic and artistic fonts for TechBros UI
 const orbitron = Orbitron({
   variable: "--font-orbitron",
@@ -129,10 +130,12 @@ export default function RootLayout({
             <Toaster theme="dark" closeButton={true} richColors={true} />
             <Navbar />
             <ContactCredenza />
+
             <SendChoiceCredenza />
             <FloatingContactMenu />
             <div className="mt-10 md:mt-0">
               {children}
+              <Analytics />
             </div>
           </LenisProvider>
         </ThemeProvider>
