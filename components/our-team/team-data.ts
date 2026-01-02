@@ -9,7 +9,7 @@ export interface TeamMember {
 }
 
 export const TEAM_MEMBERS: TeamMember[] = [
-  
+
     {
         id: 1,
         name: "Atuonye Samuel Adimchinobi",
@@ -20,12 +20,12 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
     {
         id: 2,
-        name: "Atuonye Chimeremeze Gospel",
+        name: "ATUONYE CHIMEREMEZE GOSPEL",
         role: "COO",
         image: "/team/coo.jpg",
-        bio: "He studied Public Administration at the Federal Polytechnic Nekede, Owerri, and became part of the TechBros team in 2024, contributing to the company’s growth and operations."
+        bio: "He studied Public Administration/Political Science and became part of the TechBros team in 2024, contributing to the company’s growth and operations."
     },
-      {
+    {
         id: 3,
         name: "Ezeja Emmanuel",
         role: "CTO & Lead Architect",
