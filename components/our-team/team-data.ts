@@ -12,10 +12,10 @@ export const TEAM_MEMBERS: TeamMember[] = [
 
     {
         id: 1,
-        name: "Atuonye Samuel Adimchinobi",
+        name: "ATUONYE SAMUEL ADIMCHINOBI",
         role: "CEO & Founder",
         image: "/team/ceo.jpg",
-        bio: "A graduate of Industrial Chemistry from the University of Port Harcourt, he founded TechBros in 2022 with a vision to drive innovation and technology-driven solutions.",
+        bio: "A graduate of Industrial Chemistry from the University of Port Harcourt and a Certified Full Stack & AI Engineer. He founded TechBros in 2022 with a vision to drive innovation and technology-driven solutions.",
         website: "https://www.linkedin.com/in/samuel-atuonye-93a934201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
