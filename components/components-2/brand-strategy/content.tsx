@@ -4,10 +4,10 @@
 import { Crown, Target, TrendingUp, Users, Lightbulb } from "lucide-react";
 import { GlitchText, ListItem, MagneticButton } from "./components";
 
-export function BrandContent({ href }: { href?: string }) {
+export function BrandContent({ href, isHero }: { href?: string, isHero?: boolean }) {
     return (
         <div className="order-1 lg:order-2 space-y-4 relative z-20 lg:-mt-24">
-            <div className="space-y-2">
+            <div className="space-y-4">
                 <div className="flex items-center gap-3">
                     <div className="p-2 bg-amber-500/10 rounded-lg border border-amber-500/20 backdrop-blur-md">
                         <Crown className="w-5 h-5 text-amber-400" />
@@ -16,12 +16,7 @@ export function BrandContent({ href }: { href?: string }) {
                 </div>
 
                 {/* Metallic Headline with Orange Glitch */}
-                <h2 className="text-6xl md:text-8xl font-bold font-audiowide text-white leading-[0.9]">
-                    BRAND <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-neutral-200 to-neutral-500">
-                        STRATEGY
-                    </span>
-                </h2>
+                <GlitchText text="BRAND STRATEGY" delay={0} as={isHero ? "h1" : "h3"} className="!mr-0" />
             </div>
 
             <p className="text-neutral-400 text-lg leading-relaxed max-w-xl border-l-4 border-amber-500/50 pl-6 font-rajdhani">

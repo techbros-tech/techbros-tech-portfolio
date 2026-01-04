@@ -62,20 +62,20 @@ const SocialHub = React.memo(() => {
 
                 {/* Top Row: FB & LinkedIn & WhatsApp */}
                 <div className="flex flex-row items-center justify-between">
-                    <a href={CONTACT_INFO.socials.find(s => s.label === "Facebook")?.href} target="_blank" rel="noopener noreferrer">
+                    <a href={CONTACT_INFO.socials.find(s => s.label === "Facebook")?.href} target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
                         <Circle ref={fbRef} className="hover:shadow-[#1877F2]/50"><FaFacebook size={24} color="#1877F2" /></Circle>
                     </a>
-                    <a href={CONTACT_INFO.whatsapp.href} target="_blank" rel="noopener noreferrer">
+                    <a href={CONTACT_INFO.whatsapp.href} target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
                         <Circle ref={waRef} className="hover:shadow-[#25D366]/50"><CONTACT_INFO.whatsapp.icon size={26} color="#25D366" /></Circle>
                     </a>
-                    <a href={CONTACT_INFO.socials.find(s => s.label === "LinkedIn")?.href} target="_blank" rel="noopener noreferrer">
+                    <a href={CONTACT_INFO.socials.find(s => s.label === "LinkedIn")?.href} target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn">
                         <Circle ref={liRef} className="hover:shadow-[#0A66C2]/50"><FaLinkedin size={24} color="#0A66C2" /></Circle>
                     </a>
                 </div>
 
                 {/* Middle Row: Twitter, Center, TikTok */}
                 <div className="flex flex-row items-center justify-between">
-                    <a href={CONTACT_INFO.socials.find(s => s.label === "Twitter (X)")?.href} target="_blank" rel="noopener noreferrer">
+                    <a href={CONTACT_INFO.socials.find(s => s.label === "Twitter (X)")?.href} target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter (X)">
                         <Circle ref={twRef} className="hover:shadow-[#1DA1F2]/50"><FaTwitter size={24} color="#1DA1F2" /></Circle>
                     </a>
 
@@ -96,17 +96,17 @@ const SocialHub = React.memo(() => {
                         </motion.div>
                     </div>
 
-                    <a href={CONTACT_INFO.socials.find(s => s.label === "TikTok")?.href} target="_blank" rel="noopener noreferrer">
+                    <a href={CONTACT_INFO.socials.find(s => s.label === "TikTok")?.href} target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
                         <Circle ref={ttRef} className="hover:shadow-[#00f2ea]/50"><FaTiktok size={24} className="text-white hover:text-[#00f2ea] transition-colors" /></Circle>
                     </a>
                 </div>
 
                 {/* Bottom Row: Instagram & Email */}
                 <div className="flex flex-row items-center justify-evenly">
-                    <a href={CONTACT_INFO.socials.find(s => s.label === "Instagram")?.href} target="_blank" rel="noopener noreferrer">
+                    <a href={CONTACT_INFO.socials.find(s => s.label === "Instagram")?.href} target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
                         <Circle ref={inRef} className="hover:shadow-[#E4405F]/50"><FaInstagram size={24} className="text-[#E4405F]" /></Circle>
                     </a>
-                    <a href={CONTACT_INFO.email.href} target="_blank" rel="noopener noreferrer">
+                    <a href={CONTACT_INFO.email.href} target="_blank" rel="noopener noreferrer" aria-label="Send us an email">
                         <Circle ref={emRef} className="hover:shadow-[#ea4335]/50"><CONTACT_INFO.email.icon size={24} color="#ea4335" /></Circle>
                     </a>
                 </div>

@@ -25,10 +25,10 @@ const BrowserContent = memo(function BrowserContent() {
                 {/* Sidebar */}
                 <div className="w-12 border-r border-white/5 flex flex-col items-center py-4 space-y-6 bg-[#111]">
                     <FileCode2 className="w-5 h-5 text-emerald-500" />
-                    <Search className="w-5 h-5 text-neutral-600" />
-                    <LayoutTemplate className="w-5 h-5 text-neutral-600" />
+                    <Search className="w-5 h-5 text-neutral-400" />
+                    <LayoutTemplate className="w-5 h-5 text-neutral-400" />
                     <div className="flex-1" />
-                    <Settings className="w-5 h-5 text-neutral-600" />
+                    <Settings className="w-5 h-5 text-neutral-400" />
                 </div>
 
                 {/* Main Content */}
@@ -45,7 +45,7 @@ const BrowserContent = memo(function BrowserContent() {
                             <div><span className="text-purple-400">export default function</span> <span className="text-blue-400">HeroSection</span>() {`{`}</div>
                             <div className="pl-4"><span className="text-purple-400">return</span> (</div>
                             <div className="pl-8"><span className="text-teal-400">&lt;div</span> <span className="text-orange-300">className</span>=<span className="text-green-400">"relative w-full h-screen"</span>&gt;</div>
-                            <div className="pl-12 text-neutral-500">{`/* TechBros Core Engine */`}</div>
+                            <div className="pl-12 text-neutral-400">{`/* TechBros Core Engine */`}</div>
                             <div className="pl-12"><span className="text-teal-400">&lt;h1&gt;</span>Building the Future<span className="text-teal-400">&lt;/h1&gt;</span></div>
                             <div className="pl-8"><span className="text-teal-400">&lt;/div&gt;</span></div>
                             <div className="pl-4">);</div>
@@ -55,7 +55,7 @@ const BrowserContent = memo(function BrowserContent() {
 
                     {/* Live Preview Panel (Desktop Only) */}
                     <div className="hidden md:flex w-1/3 border-l border-white/5 bg-neutral-900/50 flex-col p-4">
-                        <div className="text-[10px] text-neutral-500 font-mono mb-2 uppercase tracking-wider">Preview</div>
+                        <div className="text-[10px] text-neutral-400 font-mono mb-2 uppercase tracking-wider">Preview</div>
                         <div className="flex-1 rounded-lg border border-white/10 bg-gradient-to-br from-emerald-900/20 to-black relative overflow-hidden flex items-center justify-center p-4">
                             <div className="w-full space-y-3">
                                 <div className="h-2 w-1/3 bg-white/10 rounded-full" />

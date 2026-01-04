@@ -131,19 +131,19 @@ export default function ProcessTimeline() {
                                             "w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-white transition-all duration-500 border border-white/5",
                                             isActive
                                                 ? `bg-gradient-to-br ${step.gradient} shadow-lg`
-                                                : "bg-neutral-900 text-neutral-600 group-hover:text-white group-hover:bg-neutral-800"
+                                                : "bg-neutral-900 text-neutral-400 group-hover:text-white group-hover:bg-neutral-800"
                                         )}>
                                             {step.icon}
                                         </div>
 
                                         <h3 className={cn(
                                             "text-2xl font-bold font-audiowide mb-4 transition-colors duration-300",
-                                            isActive ? "text-white" : "text-neutral-500 group-hover:text-neutral-300"
+                                            isActive ? "text-white" : "text-neutral-400 group-hover:text-neutral-200"
                                         )}>
                                             {step.title}
                                         </h3>
 
-                                        <p className="text-neutral-500 font-rajdhani text-base leading-relaxed group-hover:text-neutral-400 transition-colors">
+                                        <p className="text-neutral-400 font-rajdhani text-base leading-relaxed group-hover:text-neutral-200 transition-colors">
                                             {step.description}
                                         </p>
                                     </div>

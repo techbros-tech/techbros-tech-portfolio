@@ -10,9 +10,9 @@ const CanvasContent = memo(function CanvasContent() {
             {/* Left Toolbar */}
             <div className="w-10 h-full bg-[#0F0F0F] border-r border-white/5 flex flex-col items-center py-4 space-y-5 z-20">
                 <MousePointer2 className="w-4 h-4 text-white" />
-                <BoxSelect className="w-4 h-4 text-neutral-500" />
-                <Type className="w-4 h-4 text-neutral-500" />
-                <ImageIcon className="w-4 h-4 text-neutral-500" />
+                <BoxSelect className="w-4 h-4 text-neutral-400" />
+                <Type className="w-4 h-4 text-neutral-400" />
+                <ImageIcon className="w-4 h-4 text-neutral-400" />
             </div>
 
             {/* Left Sidebar (Layers) - Desktop Only */}
@@ -20,8 +20,8 @@ const CanvasContent = memo(function CanvasContent() {
                 <div className="h-10 border-b border-white/5 flex items-center px-4 text-xs font-semibold text-white">Layers</div>
                 <div className="flex-1 p-2 space-y-1">
                     <div className="flex items-center px-2 py-1.5 bg-fuchsia-500/20 text-fuchsia-400 text-[10px] rounded">Hero Section</div>
-                    <div className="flex items-center px-2 py-1.5 text-neutral-500 text-[10px]">Button Primary</div>
-                    <div className="flex items-center px-2 py-1.5 text-neutral-500 text-[10px]">Navigation</div>
+                    <div className="flex items-center px-2 py-1.5 text-neutral-400 text-[10px]">Button Primary</div>
+                    <div className="flex items-center px-2 py-1.5 text-neutral-400 text-[10px]">Navigation</div>
                 </div>
             </div>
 
@@ -30,9 +30,9 @@ const CanvasContent = memo(function CanvasContent() {
                 {/* Top Bar Mock */}
                 <div className="h-10 w-full border-b border-white/5 flex items-center justify-between px-4 bg-[#111]">
                     <div className="flex items-center gap-2">
-                        <div className="text-[10px] text-neutral-500 font-mono">My_Design_System.fig</div>
-                        <div className="w-1.5 h-1.5 rounded-full bg-neutral-600" />
-                        <div className="text-[10px] text-neutral-600">Edited just now</div>
+                        <div className="text-[10px] text-neutral-400 font-mono">My_Design_System.fig</div>
+                        <div className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
+                        <div className="text-[10px] text-neutral-400">Edited just now</div>
                     </div>
                     <div className="flex -space-x-1">
                         <div className="w-5 h-5 rounded-full bg-fuchsia-500 border border-[#111]" />
@@ -73,7 +73,7 @@ const CanvasContent = memo(function CanvasContent() {
             {/* Right Sidebar (Properties) - Desktop Only */}
             <div className="hidden lg:flex w-48 h-full bg-[#111] border-l border-white/5 flex-col z-10 p-3 space-y-4">
                 <div className="space-y-2">
-                    <div className="text-[10px] uppercase font-bold text-neutral-600">Layout</div>
+                    <div className="text-[10px] uppercase font-bold text-neutral-400">Layout</div>
                     <div className="grid grid-cols-2 gap-2">
                         <div className="h-6 bg-white/5 rounded border border-white/5" />
                         <div className="h-6 bg-white/5 rounded border border-white/5" />
@@ -83,7 +83,7 @@ const CanvasContent = memo(function CanvasContent() {
                 </div>
                 <div className="w-full h-[1px] bg-white/5" />
                 <div className="space-y-2">
-                    <div className="text-[10px] uppercase font-bold text-neutral-600">Fill</div>
+                    <div className="text-[10px] uppercase font-bold text-neutral-400">Fill</div>
                     <div className="flex items-center gap-2">
                         <div className="w-4 h-4 bg-fuchsia-500 rounded border border-white/10" />
                         <div className="text-[10px] text-neutral-400">#E879F9</div>

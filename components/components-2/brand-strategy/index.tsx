@@ -4,7 +4,7 @@ import { BrandBackground } from "./background";
 import { BrandContent } from "./content";
 import { BrandHero } from "./hero";
 
-function BrandStrategy({ href }: { href?: string }) {
+function BrandStrategy({ href, isHero }: { href?: string, isHero?: boolean }) {
     return (
         <section className="min-h-screen relative flex items-center bg-black overflow-hidden py-12 group/section">
             <BrandBackground />
@@ -14,7 +14,7 @@ function BrandStrategy({ href }: { href?: string }) {
                 <BrandHero />
 
                 {/* Text Content - Right Side */}
-                <BrandContent href={href} />
+                <BrandContent href={href} isHero={isHero} />
             </div>
         </section>
     );

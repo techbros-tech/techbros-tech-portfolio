@@ -26,11 +26,11 @@ function MetricItem({ value, label, suffix = "" }: { value: number, label: strin
     return (
         <div className="flex flex-col items-center group cursor-default">
             <div className="relative flex items-baseline gap-1 mb-2">
-                <span className="text-6xl md:text-8xl font-audiowide font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-700 tracking-tighter group-hover:from-emerald-400 group-hover:to-emerald-700 transition-all duration-500">
+                <span className="text-6xl md:text-8xl font-audiowide font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 tracking-tighter group-hover:from-emerald-400 group-hover:to-emerald-700 transition-all duration-500">
                     <Counter value={value} />
                 </span>
                 {suffix && (
-                    <span className="text-2xl md:text-3xl font-rajdhani text-neutral-600 group-hover:text-emerald-500/50 transition-colors">
+                    <span className="text-2xl md:text-3xl font-rajdhani text-neutral-400 group-hover:text-emerald-500/50 transition-colors">
                         {suffix}
                     </span>
                 )}
@@ -40,7 +40,7 @@ function MetricItem({ value, label, suffix = "" }: { value: number, label: strin
                     </div>
                 )}
             </div>
-            <p className="text-sm md:text-lg font-rajdhani font-medium text-neutral-500 uppercase tracking-[0.2em] group-hover:text-white transition-colors">
+            <p className="text-sm md:text-lg font-rajdhani font-medium text-neutral-400 uppercase tracking-[0.2em] group-hover:text-white transition-colors">
                 {label}
             </p>
         </div>

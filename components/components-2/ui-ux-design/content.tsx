@@ -4,10 +4,10 @@
 import { PenTool, Layout, MousePointer2, Wand2, Maximize2 } from "lucide-react";
 import { GlitchText, ListItem, MagneticButton } from "./components";
 
-export function UiUxContent({ href }: { href?: string }) {
+export function UiUxContent({ href, isHero }: { href?: string, isHero?: boolean }) {
     return (
         <div className="space-y-4 relative z-20 lg:-mt-24">
-            <div className="space-y-2">
+            <div className="space-y-4">
                 <div className="flex items-center gap-3">
                     <div className="p-2 bg-fuchsia-500/10 rounded-lg border border-fuchsia-500/20 backdrop-blur-md">
                         <PenTool className="w-5 h-5 text-fuchsia-400" />
@@ -16,12 +16,7 @@ export function UiUxContent({ href }: { href?: string }) {
                 </div>
 
                 {/* Metallic Headline with Purple Glitch */}
-                <h2 className="text-6xl md:text-8xl font-bold font-audiowide text-white leading-[0.9]">
-                    UI/UX <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-neutral-200 to-neutral-500">
-                        DESIGN
-                    </span>
-                </h2>
+                <GlitchText text="UI/UX DESIGN" delay={0} as={isHero ? "h1" : "h3"} className="!mr-0" />
             </div>
 
             <p className="text-neutral-400 text-lg leading-relaxed max-w-xl border-l-4 border-fuchsia-500/50 pl-6 font-rajdhani">

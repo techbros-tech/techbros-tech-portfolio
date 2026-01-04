@@ -72,10 +72,10 @@ export default function TechStackShowcase() {
             <div className="container mx-auto px-4 relative z-10 w-full flex flex-col items-center">
 
                 <div className="text-center mb-16 md:mb-32 z-20 relative">
-                    <h2 className="text-4xl md:text-7xl font-bold font-audiowide mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-600">
+                    <h2 className="text-4xl md:text-7xl font-bold font-audiowide mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400">
                         Design Arsenal
                     </h2>
-                    <p className="text-neutral-500 max-w-xl mx-auto font-rajdhani text-lg md:text-xl">
+                    <p className="text-neutral-400 max-w-xl mx-auto font-rajdhani text-lg md:text-xl">
                         Powering creativity with world-class tools.
                     </p>
                 </div>

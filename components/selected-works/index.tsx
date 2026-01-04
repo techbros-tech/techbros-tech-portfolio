@@ -23,11 +23,11 @@ export default function SelectedWorks() {
                     <div
                         className="inline-block mb-4"
                     >
-                      
+
                     </div>
 
                     <div className="flex flex-col items-center">
-                        <GlitchText text="SELECTED WORKS" className="text-5xl md:text-7xl lg:text-8xl font-black font-audiowide text-white mb-6" />
+                        <GlitchText as="h2" text="SELECTED WORKS" className="text-5xl md:text-7xl lg:text-8xl font-black font-audiowide text-white mb-6" />
                         <p className="text-neutral-400 max-w-2xl mx-auto text-lg md:text-xl font-exo2 leading-relaxed">
                             A showcase of our digital craftsmanship. We build platforms that define brands and disrupt industries.
                         </p>
@@ -54,14 +54,14 @@ export default function SelectedWorks() {
                             <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]"></span>
                         </div>
                         <span className="font-audiowide text-[10px] md:text-xs tracking-[0.2em] uppercase">
-                            <span className="text-neutral-500">Currently:</span>
+                            <span className="text-neutral-400">Currently:</span>
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-yellow-500 to-amber-200 ml-2">
                                 Actively working on 3 big projects
                             </span>
                         </span>
                     </motion.div>
 
-                    <p className="text-neutral-600 font-rajdhani tracking-[0.4em] uppercase text-[10px] md:text-sm select-none opacity-60">
+                    <p className="text-neutral-400 font-rajdhani tracking-[0.4em] uppercase text-[10px] md:text-sm select-none">
                         + many projects we cannot share publicly
                     </p>
                 </div>

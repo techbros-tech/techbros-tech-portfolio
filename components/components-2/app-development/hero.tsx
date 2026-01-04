@@ -46,7 +46,7 @@ const PhoneContent = memo(function PhoneContent() {
 
                     {/* Recent Activity List */}
                     <div className="space-y-4">
-                        <div className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">Transactions</div>
+                        <div className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">Transactions</div>
 
                         {[
                             { icon: CreditCard, color: "bg-orange-500", name: "Netflix Sub", date: "Today", amount: "-$15.99", text: "text-white" },
@@ -60,7 +60,7 @@ const PhoneContent = memo(function PhoneContent() {
                                     </div>
                                     <div>
                                         <div className="text-sm text-white font-medium">{item.name}</div>
-                                        <div className="text-[10px] text-neutral-500">{item.date}</div>
+                                        <div className="text-[10px] text-neutral-400">{item.date}</div>
                                     </div>
                                 </div>
                                 <div className={`text-sm font-medium ${item.amount.startsWith('+') ? 'text-emerald-400' : 'text-white'}`}>
@@ -74,9 +74,9 @@ const PhoneContent = memo(function PhoneContent() {
                 {/* Bottom Nav Mock */}
                 <div className="h-16 border-t border-white/5 flex items-center justify-around bg-black/50 backdrop-blur-lg z-20 pb-2">
                     <LayoutGrid className="w-5 h-5 text-blue-500" />
-                    <Wallet className="w-5 h-5 text-neutral-600" />
-                    <CreditCard className="w-5 h-5 text-neutral-600" />
-                    <Settings className="w-5 h-5 text-neutral-600" />
+                    <Wallet className="w-5 h-5 text-neutral-400" />
+                    <CreditCard className="w-5 h-5 text-neutral-400" />
+                    <Settings className="w-5 h-5 text-neutral-400" />
                 </div>
 
                 {/* Dynamic Island Overlay */}

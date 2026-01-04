@@ -54,14 +54,14 @@ export default function SolutionsGrid() {
     return (
         <section className="py-24 md:py-32 bg-black relative">
             <div className="container mx-auto px-4 relative z-10 w-full">
-                
+
                 {/* Header */}
                 <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div>
-                         <h2 className="text-4xl md:text-6xl font-bold font-audiowide mb-4 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-500">
+                        <h2 className="text-4xl md:text-6xl font-bold font-audiowide mb-4 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400">
                             Core Solutions
                         </h2>
-                        <p className="text-neutral-500 font-rajdhani text-xl max-w-lg">
+                        <p className="text-neutral-400 font-rajdhani text-xl max-w-lg">
                             Engineered monoliths for every digital challenge.
                         </p>
                     </div>
@@ -72,9 +72,9 @@ export default function SolutionsGrid() {
                 <div className="flex flex-col md:flex-row gap-4 h-[600px] md:h-[600px]">
                     {solutions.map((solution) => {
                         const isActive = activeId === solution.id;
-                        
+
                         return (
-                            <div 
+                            <div
                                 key={solution.id}
                                 className={cn(
                                     "relative rounded-3xl overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] cursor-pointer group border border-white/5",
@@ -111,7 +111,7 @@ export default function SolutionsGrid() {
                                                 / System_0{solutions.indexOf(solution) + 1}
                                             </span>
                                         </div>
-                                        <motion.h3 
+                                        <motion.h3
                                             layoutId={`title-${solution.id}`}
                                             className="text-3xl md:text-5xl font-bold font-audiowide text-white mb-6"
                                         >
@@ -136,7 +136,7 @@ export default function SolutionsGrid() {
                                     isActive ? "opacity-0" : "opacity-100"
                                 )}>
                                     <div className="hidden md:flex rotate-180" style={{ writingMode: 'vertical-rl' }}>
-                                        <span className="text-4xl font-audiowide text-neutral-700 font-bold whitespace-nowrap tracking-widest uppercase group-hover:text-white transition-colors duration-500">
+                                        <span className="text-4xl font-audiowide text-neutral-400 font-bold whitespace-nowrap tracking-widest uppercase group-hover:text-white transition-colors duration-500">
                                             {solution.label}
                                         </span>
                                     </div>
@@ -144,18 +144,18 @@ export default function SolutionsGrid() {
                                     {/* --- COLLAPSED CONTENT (MOBILE) --- */}
                                     {/* Horizontal text shown when NOT active on Mobile */}
                                     <div className="md:hidden w-full h-full flex items-center px-8 justify-between">
-                                        <span className="text-2xl font-audiowide text-neutral-500 uppercase">
+                                        <span className="text-2xl font-audiowide text-neutral-400 uppercase">
                                             {solution.title}
                                         </span>
-                                        <div className="text-neutral-600">
+                                        <div className="text-neutral-400">
                                             {solution.icon}
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Background Texture/Noise */}
-                                <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 pointer-events-none mix-blend-overlay" />
-                                
+                                <div className="absolute inset-0  opacity-20 pointer-events-none mix-blend-overlay" />
+
                             </div>
                         );
                     })}

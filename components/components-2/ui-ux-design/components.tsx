@@ -4,17 +4,18 @@ import { memo, useRef, useCallback } from "react";
 import { motion, useSpring, useMotionValue, useTransform } from "framer-motion";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 // --- Metallic Glitch Text (Silver Main, Purple Glitch) ---
-export const GlitchText = memo(function GlitchText({ text, delay }: { text: string, delay: number }) {
+export const GlitchText = memo(function GlitchText({ text, delay, className, as: Tag = "h3" }: { text: string, delay?: number, className?: string, as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" }) {
     return (
-        <div className="relative inline-block mr-4 group cursor-default">
+        <div className={cn("relative inline-block mr-4 group cursor-default", className)}>
             {/* Main Text - Silver Metal */}
-            <h3
+            <Tag
                 className="text-5xl md:text-7xl lg:text-8xl font-bold font-audiowide leading-[0.9] relative z-10 bg-clip-text text-transparent bg-gradient-to-b from-white via-neutral-200 to-neutral-500"
             >
                 {text}
-            </h3>
+            </Tag>
 
             {/* Glitch Shadows - Purple/Pink Tint */}
             <span className="absolute top-0 left-0 -ml-[1px] text-5xl md:text-7xl lg:text-8xl font-bold font-audiowide leading-[0.9] text-fuchsia-400/50 opacity-0 group-hover:opacity-100 group-hover:animate-pulse -z-10 transition-opacity duration-100 blur-[1px]">

@@ -18,7 +18,7 @@ export function WebDevContent({ href, isHero, scrollToId }: { href?: string, isH
                 </div>
 
                 {/* Metallic Headline */}
-                <GlitchText text="WEBSITES" delay={0} />
+                <GlitchText text="WEBSITES" delay={0} as={isHero ? "h1" : "h3"} />
             </div>
 
             <p className="text-neutral-400 text-lg leading-relaxed max-w-xl">

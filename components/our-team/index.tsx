@@ -79,7 +79,7 @@ export default function OurTeam() {
 
                 {/* Header */}
                 <div className="text-center mb-16 sm:mb-24 space-y-4">
-                    <GlitchText text="THE SQUAD" delay={0} />
+                    <GlitchText as="h2" text="THE SQUAD" delay={0} />
                     <p className="text-neutral-400 max-w-xl mx-auto text-lg sm:text-xl">
                         The minds behind the machine. A network of innovation.
                     </p>

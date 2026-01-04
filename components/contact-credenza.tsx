@@ -63,6 +63,7 @@ export function ContactCredenza() {
                                             href={contact.href}
                                             target="_blank"
                                             rel="noopener noreferrer"
+                                            aria-label={contact.label}
                                             initial={{ opacity: 0, scale: 0.9, y: 20 }}
                                             animate={{ opacity: 1, scale: 1, y: 0 }}
                                             transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
@@ -121,6 +122,7 @@ export function ContactCredenza() {
                                                 href={social.href}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
+                                                aria-label={`Follow us on ${social.label}`}
                                                 initial={{ opacity: 0, scale: 0 }}
                                                 animate={{ opacity: 1, scale: 1 }}
                                                 transition={{ delay: 0.3 + (index * 0.05) }}

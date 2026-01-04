@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   experimental: {
   },
   images: {
-    qualities: [75, 85,65],
+    qualities: [75, 85, 65],
   },
   /* config options here */
 };

@@ -13,9 +13,9 @@ export default function UiUxDesignBody() {
             {/* Intro Text */}
             <div className="container mx-auto px-4 py-24 relative z-10">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h3 className="text-4xl md:text-6xl font-bold font-audiowide mb-8 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-500">
+                    <h2 className="text-4xl md:text-6xl font-bold font-audiowide mb-8 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-500">
                         Design That <span className="text-fuchsia-400">Works</span>
-                    </h3>
+                    </h2>
                     <p className="text-neutral-400 text-lg md:text-xl leading-relaxed font-rajdhani max-w-2xl mx-auto">
                         Great design is invisible. It guides the user effortlessly to their goal. Our UI/UX design process is rooted in empathy and data. We create interfaces that are not only visually stunning but also intuitive and accessible.
                     </p>

@@ -27,13 +27,13 @@ function MetricItem({ value, label, suffix = "", prefix = "", decimals = 0 }: { 
         <div className="flex flex-col items-center group cursor-default">
             <div className="relative flex items-baseline gap-1 mb-2">
                 {prefix && (
-                    <span className="text-2xl md:text-3xl font-audiowide text-neutral-600 mr-1">{prefix}</span>
+                    <span className="text-2xl md:text-3xl font-audiowide text-neutral-400 mr-1">{prefix}</span>
                 )}
-                <span className="text-6xl md:text-8xl font-audiowide font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-700 tracking-tighter group-hover:from-blue-400 group-hover:to-blue-700 transition-all duration-500">
+                <span className="text-6xl md:text-8xl font-audiowide font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 tracking-tighter group-hover:from-blue-400 group-hover:to-blue-700 transition-all duration-500">
                     <Counter value={value} decimals={decimals} />
                 </span>
                 {suffix && (
-                    <span className="text-2xl md:text-3xl font-rajdhani text-neutral-600 group-hover:text-blue-500/50 transition-colors">
+                    <span className="text-2xl md:text-3xl font-rajdhani text-neutral-400 group-hover:text-blue-500/50 transition-colors">
                         {suffix}
                     </span>
                 )}
@@ -44,7 +44,7 @@ function MetricItem({ value, label, suffix = "", prefix = "", decimals = 0 }: { 
                     </div>
                 )}
             </div>
-            <p className="text-sm md:text-lg font-rajdhani font-medium text-neutral-500 uppercase tracking-[0.2em] group-hover:text-white transition-colors">
+            <p className="text-sm md:text-lg font-rajdhani font-medium text-neutral-400 uppercase tracking-[0.2em] group-hover:text-white transition-colors">
                 {label}
             </p>
         </div>

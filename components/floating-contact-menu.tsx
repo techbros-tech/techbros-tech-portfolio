@@ -114,6 +114,7 @@ export function FloatingContactMenu() {
 
             <motion.button
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Close contact menu" : "Open contact menu"}
                 animate={isBouncing && !isOpen ? {
                     y: [0, -10, 0],
                 } : { y: 0 }}

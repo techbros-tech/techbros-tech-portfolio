@@ -69,7 +69,7 @@ export default function Footer({ color = "emerald" }: { color?: FooterColor }) {
                     {/* Right: Links */}
                     <div className="grid grid-cols-2 gap-8 md:gap-12">
                         <div className="space-y-6">
-                            <h4 className="text-lg font-audiowide text-neutral-500 uppercase tracking-widest">Services</h4>
+                            <h3 className="text-lg font-audiowide text-neutral-400 uppercase tracking-widest">Services</h3>
                             <ul className="space-y-4 font-rajdhani text-xl font-medium">
                                 <li><Link href="/services/web-development" className={`transition-colors ${theme.hoverText}`}>Web Development</Link></li>
                                 <li><Link href="/services/app-development" className={`transition-colors ${theme.hoverText}`}>App Development</Link></li>
@@ -78,7 +78,7 @@ export default function Footer({ color = "emerald" }: { color?: FooterColor }) {
                             </ul>
                         </div>
                         <div className="space-y-6">
-                            <h4 className="text-lg font-audiowide text-neutral-500 uppercase tracking-widest">Company</h4>
+                            <h3 className="text-lg font-audiowide text-neutral-400 uppercase tracking-widest">Company</h3>
                             <ul className="space-y-4 font-rajdhani text-xl font-medium">
                                 <li><Link href="/#about" className={`transition-colors ${theme.hoverText}`}>About Us</Link></li>
                                 <li><Link href="#" className={`transition-colors ${theme.hoverText}`}>Careers</Link></li>
@@ -90,7 +90,7 @@ export default function Footer({ color = "emerald" }: { color?: FooterColor }) {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-8 text-neutral-500 font-rajdhani">
+                <div className="pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-8 text-neutral-400 font-rajdhani">
                     <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
                         <p>© {new Date().getFullYear()} TechBros. All rights reserved.</p>
                         <div className="flex items-center gap-6">

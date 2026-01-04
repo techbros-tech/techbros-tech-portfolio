@@ -24,11 +24,11 @@ const StrategyMapContent = memo(function StrategyMapContent() {
                 {/* Top Stats Row */}
                 <div className="grid grid-cols-2 gap-4">
                     <div className="p-3 rounded-lg bg-white/5 border border-white/5">
-                        <div className="text-[10px] text-neutral-500 mb-1">Total Reach</div>
+                        <div className="text-[10px] text-neutral-400 mb-1">Total Reach</div>
                         <div className="text-lg font-bold text-white">4.2M</div>
                     </div>
                     <div className="p-3 rounded-lg bg-white/5 border border-white/5">
-                        <div className="text-[10px] text-neutral-500 mb-1">Engagement</div>
+                        <div className="text-[10px] text-neutral-400 mb-1">Engagement</div>
                         <div className="text-lg font-bold text-amber-400">88%</div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const StrategyMapContent = memo(function StrategyMapContent() {
                 {/* Floating Highlight Card */}
                 <div className="absolute bottom-6 right-[-10px] bg-neutral-800 border-l border-t border-b border-white/10 p-4 rounded-l-xl shadow-2xl w-2/3 z-10 flex items-center justify-between">
                     <div>
-                        <div className="text-[10px] text-neutral-500 mb-0.5">ROI Projection</div>
+                        <div className="text-[10px] text-neutral-400 mb-0.5">ROI Projection</div>
                         <div className="text-amber-400 font-bold text-xl">+124%</div>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center">
