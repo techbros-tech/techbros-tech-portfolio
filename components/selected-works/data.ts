@@ -15,7 +15,7 @@ export const SELECTED_WORKS: Project[] = [
         title: "CARE4U OHIO",
         category: "Healthcare",
         description: "Compassionate home health care services in Ohio, providing skilled nursing, therapy, and personalized patient support for a better quality of life.",
-        image: "/projects/project-1.png",
+        image: "/projects/project-2.png",
         techStack: ["Next.js", "TailwindCSS", "Framer Motion"],
         link: "https://www.care4u-ohio.com/",
         color: "#0EA5E9", // Sky Blue
@@ -25,10 +25,10 @@ export const SELECTED_WORKS: Project[] = [
         title: "NIK DALLAS",
         category: "Creative Portfolio",
         description: "A minimalist multidisciplinary design portfolio showcasing immersive digital experiences, brand identity, and visual storytelling.",
-        image: "/projects/project-2.png",
+        image: "/projects/project-1.png",
         techStack: ["React", "WebGL", "GSAP"],
         link: "https://www.nikdallas.com/",
-        color: "#8B5CF6", // Violet
+    color: "#8B5CF6", // Violet
     },
     {
         id: 3,
