@@ -14,9 +14,9 @@ export default function AppDevIntro({ onComplete }: IntroAnimationProps) {
         const sequence = async () => {
             await new Promise(r => setTimeout(r, 100));
             setStep(1);
-            await new Promise(r => setTimeout(r, 800));
+            await new Promise(r => setTimeout(r, 600));
             setStep(2);
-            await new Promise(r => setTimeout(r, 1000));
+            await new Promise(r => setTimeout(r, 800));
             onComplete();
         };
         sequence();

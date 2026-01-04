@@ -14,9 +14,9 @@ export default function WebDevIntro({ onComplete }: IntroAnimationProps) {
         const sequence = async () => {
             await new Promise(r => setTimeout(r, 100));
             setStep(1); // Network
-            await new Promise(r => setTimeout(r, 1000));
+            await new Promise(r => setTimeout(r, 700));
             setStep(2); // Connection
-            await new Promise(r => setTimeout(r, 1000)); // Total ~2-3s
+            await new Promise(r => setTimeout(r, 700));
             onComplete();
         };
         sequence();

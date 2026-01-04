@@ -7,8 +7,8 @@ interface IntroAnimationProps {
 }
 
 const CHARS = "-_~`!@#$%^&*()+=[]{}|;:,.<>?/";
-const DURATION = 2000; // 2 seconds for counting
-const COMPLETE_DELAY = 2200; // Trigger completion slightly after counting finishes
+const DURATION = 1500; // 1.5 seconds for counting
+const COMPLETE_DELAY = 1700; // Trigger completion slightly after counting finishes
 const COUNT_STEP = 5; // Update counter every 5% instead of 1% (reduces state updates from 100 to 20)
 
 function IntroAnimation({ onComplete }: IntroAnimationProps) {

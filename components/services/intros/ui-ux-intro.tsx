@@ -14,9 +14,9 @@ export default function UiUxIntro({ onComplete }: IntroAnimationProps) {
         const sequence = async () => {
             await new Promise(r => setTimeout(r, 100));
             setStep(1); // Devices
-            await new Promise(r => setTimeout(r, 800));
+            await new Promise(r => setTimeout(r, 600));
             setStep(2); // Connection
-            await new Promise(r => setTimeout(r, 1000)); // Total ~2-3s
+            await new Promise(r => setTimeout(r, 800));
             onComplete();
         };
         sequence();
