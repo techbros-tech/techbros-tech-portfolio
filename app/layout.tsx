@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     default: "TechBros | Premium Software Development & Digital Solutions",
     template: "%s | TechBros",
   },
-  description: "TechBros is a elite software development agency specializing in cutting-edge web applications, mobile apps, and strategic digital transformation for global brands.",
+  description: "TechBros is an elite software development agency specializing in premium web applications, high-performance mobile apps, and strategic digital transformation for global brands. We build the future of digital experiences.",
   keywords: [
     "TechBros",
     "Software Development",
