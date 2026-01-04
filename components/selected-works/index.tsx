@@ -23,9 +23,7 @@ export default function SelectedWorks() {
                     <div
                         className="inline-block mb-4"
                     >
-                        <span className="px-4 py-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 font-mono text-xs tracking-widest uppercase">
-                            Portfolio
-                        </span>
+                      
                     </div>
 
                     <div className="flex flex-col items-center">
